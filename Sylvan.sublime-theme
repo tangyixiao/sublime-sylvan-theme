@@ -154,6 +154,8 @@
 		"status_bar_icon_tint": "var(label_secondary)",
 		"status_bar_label_shadow": "transparent",
 
+		"ui_font_windows": "Segoe UI Variable",
+
 		"radio_back": "var(bg_base)",
 		"radio_border-unselected": "var(border_l3)",
 		"radio_selected": "var(brand_primary)",
@@ -398,6 +400,58 @@
 			"attributes": ["hover"],
 			"layer0.tint": "var(interactive_hover)",
 			"layer0.opacity": 1.0
+		},
+		{
+			"class": "text_line_control",
+			"parents": [{"class": "overlay_control"}],
+			"font.face": "var(font_face)"
+		},
+		{
+			"class": "text_line_control",
+			"parents": [{"class": "switch_project_window"}],
+			"font.face": "var(font_face)"
+		},
+		{
+			"class": "sidebar_heading",
+			"platforms": ["windows"],
+			"font.face": "var(ui_font_windows)"
+		},
+		{
+			"class": "sidebar_label",
+			"platforms": ["windows"],
+			"font.face": "var(ui_font_windows)"
+		},
+		{
+			"class": "tab_label",
+			"platforms": ["windows"],
+			"font.face": "var(ui_font_windows)"
+		},
+		{
+			"class": "quick_panel_label",
+			"platforms": ["windows"],
+			"font.face": "var(ui_font_windows)"
+		},
+		{
+			"class": "label_control",
+			"platforms": ["windows"],
+			"font.face": "var(ui_font_windows)"
+		},
+		{
+			"class": "tool_tip_label_control",
+			"platforms": ["windows"],
+			"font.face": "var(ui_font_windows)"
+		},
+		{
+			"class": "text_line_control",
+			"platforms": ["windows"],
+			"parents": [{"class": "overlay_control"}],
+			"font.face": "var(ui_font_windows)"
+		},
+		{
+			"class": "text_line_control",
+			"platforms": ["windows"],
+			"parents": [{"class": "switch_project_window"}],
+			"font.face": "var(ui_font_windows)"
 		}
 	]
 }

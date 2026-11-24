@@ -25,10 +25,18 @@ git clone https://github.com/tangyixiao/sublime-sylvan-theme.git Sylvan
 {
 	"theme": "Sylvan.sublime-theme",
 	"color_scheme": "Sylvan.sublime-color-scheme",
+	"font_face": "JetBrainsMonoNL Nerd Font Mono",
 	"themed_title_bar": true,
 	"highlight_modified_tabs": true
 }
 ```
+
+## 字体配置
+
+与 `dsh-sylvan-appearance` 的字体栈对应关系如下：
+
+- **代码字体**：Sublime Text 的编辑器字体由用户配置 `Preferences.sublime-settings` 中的 `font_face` 控制，推荐设为 `JetBrainsMonoNL Nerd Font Mono`（若未安装 Nerd Font，可改为 `JetBrains Mono` 或 `Consolas`）。
+- **界面字体**：`Sylvan.sublime-theme` 在 Windows 上默认使用 `Segoe UI Variable`，在 Linux / macOS 上沿用系统默认界面字体（`system`）。如需统一替换为其他界面字体，可在 **UI: Customize Theme** 中覆盖 `variables.font_face`。
 
 ## 配色概览
 
