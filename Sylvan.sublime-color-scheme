@@ -1,0 +1,297 @@
+{
+	"name": "Sylvan",
+	"author": "Tangyixiao",
+	"variables":
+	{
+		"bg_base": "#0f0f11",
+		"bg_sidebar": "#131416",
+		"bg_layer_1": "#18191b",
+		"bg_layer_2": "#202124",
+		"bg_layer_3": "#26272b",
+		"border_l1": "#27282c",
+		"border_l2": "#35373c",
+		"border_l3": "#46494f",
+		"label_primary": "#e3e4e6",
+		"label_secondary": "#a7aab1",
+		"label_tertiary": "#82858d",
+		"brand_primary": "#4fa66b",
+		"brand_text": "#75bd8a",
+		"brand_tertiary": "#21392a",
+		"interactive_hover": "#232529",
+		"interactive_active": "#23372a",
+		"state_success": "#69c967",
+		"state_error": "#ff7e78",
+
+		"code_fg": "#cccccc",
+		"code_comment": "#6a9955",
+		"code_keyword_control": "#c586c0",
+		"code_keyword": "#569cd6",
+		"code_type": "#4ec9b0",
+		"code_function": "#dcdcaa",
+		"code_variable": "#9cdcfe",
+		"code_constant": "#4fc1ff",
+		"code_number": "#b5cea8",
+		"code_string": "#ce9178",
+		"code_escape": "#d7ba7d",
+		"code_punctuation": "#cccccc"
+	},
+	"globals":
+	{
+		"background": "var(bg_base)",
+		"foreground": "var(code_fg)",
+		"accent": "var(brand_primary)",
+		"caret": "var(brand_primary)",
+		"block_caret": "color(var(brand_primary) a(0.35))",
+		"line_highlight": "var(bg_layer_1)",
+		"gutter": "var(bg_base)",
+		"gutter_foreground": "var(label_tertiary)",
+		"gutter_foreground_highlight": "var(label_primary)",
+		"invisibles": "var(border_l2)",
+		"guide": "var(border_l1)",
+		"active_guide": "var(border_l3)",
+		"stack_guide": "var(border_l2)",
+		"selection": "var(interactive_active)",
+		"selection_border": "color(var(brand_primary) a(0.45))",
+		"selection_border_width": "1",
+		"selection_corner_style": "round",
+		"selection_corner_radius": "3",
+		"inactive_selection": "color(var(brand_tertiary) a(0.75))",
+		"inactive_selection_border": "transparent",
+		"highlight": "var(brand_text)",
+		"find_highlight": "color(var(brand_primary) a(0.35))",
+		"find_highlight_foreground": "var(label_primary)",
+		"scroll_highlight": "var(brand_primary)",
+		"scroll_selected_highlight": "var(brand_text)",
+		"brackets_foreground": "var(brand_text)",
+		"brackets_options": "underline",
+		"bracket_contents_foreground": "var(brand_text)",
+		"bracket_contents_options": "underline",
+		"tags_foreground": "var(brand_text)",
+		"tags_options": "stippled_underline",
+		"fold_marker": "var(brand_text)",
+		"misspelling": "var(state_error)",
+		"minimap_border": "var(border_l1)",
+		"shadow": "#000000",
+		"shadow_width": "4",
+		"line_diff_width": "3",
+		"line_diff_added": "var(state_success)",
+		"line_diff_modified": "var(code_keyword)",
+		"line_diff_deleted": "var(state_error)",
+		"popup_css": "html, body { background-color: #18191b; color: #e3e4e6; } a { color: #75bd8a; } code { background-color: #232529; color: #cccccc; }",
+		"phantom_css": "html, body { background-color: #18191b; color: #e3e4e6; } a { color: #75bd8a; }"
+	},
+	"rules":
+	[
+		{
+			"name": "Comments",
+			"scope": "comment, punctuation.definition.comment",
+			"foreground": "var(code_comment)"
+		},
+		{
+			"name": "Documentation comments",
+			"scope": "comment.block.documentation",
+			"foreground": "var(code_comment)",
+			"font_style": "italic"
+		},
+		{
+			"name": "Documentation tags",
+			"scope": "storage.type.class.jsdoc, punctuation.definition.block.tag.jsdoc",
+			"foreground": "var(code_keyword)"
+		},
+		{
+			"name": "Strings",
+			"scope": "string, meta.embedded.assembly, string.quoted, string.unquoted, punctuation.definition.string",
+			"foreground": "var(code_string)"
+		},
+		{
+			"name": "String escapes and regex",
+			"scope": "constant.character.escape, string.regexp, keyword.other.substitution",
+			"foreground": "var(code_escape)"
+		},
+		{
+			"name": "Template interpolation punctuation",
+			"scope": "punctuation.definition.template-expression, punctuation.section.interpolation, punctuation.section.embedded",
+			"foreground": "var(code_keyword)"
+		},
+		{
+			"name": "Numbers",
+			"scope": "constant.numeric, keyword.other.unit",
+			"foreground": "var(code_number)"
+		},
+		{
+			"name": "Language constants",
+			"scope": "constant.language, constant.character",
+			"foreground": "var(code_keyword)"
+		},
+		{
+			"name": "Constants and enum members",
+			"scope": "variable.other.constant, variable.other.enummember, support.constant, constant.other",
+			"foreground": "var(code_constant)"
+		},
+		{
+			"name": "Control flow and module keywords",
+			"scope": "keyword.control, keyword.other.using, keyword.other.directive.using, keyword.other.import, keyword.operator.new, keyword.operator.delete, keyword.operator.expression, keyword.operator.sizeof, keyword.operator.alignof, keyword.operator.cast, keyword.operator.word, entity.name.operator",
+			"foreground": "var(code_keyword_control)"
+		},
+		{
+			"name": "Declaration keywords and storage",
+			"scope": "keyword, storage.type, storage.modifier, keyword.declaration",
+			"foreground": "var(code_keyword)"
+		},
+		{
+			"name": "Preprocessor directives",
+			"scope": "keyword.control.directive, keyword.control.import, punctuation.definition.directive, entity.name.function.preprocessor",
+			"foreground": "var(code_keyword_control)"
+		},
+		{
+			"name": "Preprocessor strings",
+			"scope": "meta.preprocessor.string, meta.preprocessor string",
+			"foreground": "var(code_string)"
+		},
+		{
+			"name": "Preprocessor numbers",
+			"scope": "meta.preprocessor.numeric, meta.preprocessor constant.numeric",
+			"foreground": "var(code_number)"
+		},
+		{
+			"name": "Types, classes, interfaces, and namespaces",
+			"scope": "support.type, support.class, entity.name.type, entity.name.class, entity.name.struct, entity.name.enum, entity.name.union, entity.name.interface, entity.name.namespace, entity.other.inherited-class, meta.type.annotation entity.name.type, storage.type.cs, storage.type.generic, storage.type.java, storage.type.haskell, storage.type.ocaml",
+			"foreground": "var(code_type)"
+		},
+		{
+			"name": "Functions and methods",
+			"scope": "entity.name.function, support.function, variable.function, meta.function-call variable.function, meta.function-call entity.name.function",
+			"foreground": "var(code_function)"
+		},
+		{
+			"name": "Variables, parameters, and properties",
+			"scope": "variable, variable.parameter, variable.other.member, variable.other.property, variable.other.readwrite, meta.definition.variable.name, support.variable, entity.name.variable, meta.property-name, meta.object-literal.key",
+			"foreground": "var(code_variable)"
+		},
+		{
+			"name": "Language variables (this, self, super)",
+			"scope": "variable.language",
+			"foreground": "var(code_keyword)"
+		},
+		{
+			"name": "Operators and punctuation",
+			"scope": "keyword.operator, punctuation",
+			"foreground": "var(code_punctuation)"
+		},
+		{
+			"name": "HTML and XML tags",
+			"scope": "entity.name.tag",
+			"foreground": "var(code_keyword)"
+		},
+		{
+			"name": "JSX and TSX components",
+			"scope": "support.class.component, entity.name.tag.tsx, entity.name.tag.jsx",
+			"foreground": "var(code_type)"
+		},
+		{
+			"name": "Tag brackets",
+			"scope": "punctuation.definition.tag",
+			"foreground": "var(label_tertiary)"
+		},
+		{
+			"name": "Tag attributes",
+			"scope": "entity.other.attribute-name",
+			"foreground": "var(code_variable)"
+		},
+		{
+			"name": "CSS selectors",
+			"scope": "entity.other.attribute-name.class.css, entity.other.attribute-name.id.css, entity.other.attribute-name.pseudo-class.css, entity.other.attribute-name.pseudo-element.css, entity.name.tag.css",
+			"foreground": "var(code_escape)"
+		},
+		{
+			"name": "CSS properties",
+			"scope": "support.type.property-name.css, meta.property-name.css",
+			"foreground": "var(code_variable)"
+		},
+		{
+			"name": "CSS property values",
+			"scope": "support.constant.property-value.css, support.constant.font-name.css, support.constant.color.w3c-standard-color-name.css",
+			"foreground": "var(code_string)"
+		},
+		{
+			"name": "JSON and YAML keys",
+			"scope": "meta.mapping.key string, support.type.property-name.json, entity.name.tag.yaml",
+			"foreground": "var(code_variable)"
+		},
+		{
+			"name": "Markdown headings",
+			"scope": "markup.heading, punctuation.definition.heading",
+			"foreground": "var(code_keyword)",
+			"font_style": "bold"
+		},
+		{
+			"name": "Markdown bold",
+			"scope": "markup.bold",
+			"foreground": "var(code_function)",
+			"font_style": "bold"
+		},
+		{
+			"name": "Markdown italic",
+			"scope": "markup.italic",
+			"foreground": "var(code_keyword_control)",
+			"font_style": "italic"
+		},
+		{
+			"name": "Markdown strikethrough",
+			"scope": "markup.strikethrough",
+			"foreground": "var(label_tertiary)"
+		},
+		{
+			"name": "Markdown inline and fenced code",
+			"scope": "markup.raw.inline, markup.raw.code-fence, markup.inline.raw",
+			"foreground": "var(code_string)"
+		},
+		{
+			"name": "Markdown quotes",
+			"scope": "markup.quote",
+			"foreground": "var(code_comment)",
+			"font_style": "italic"
+		},
+		{
+			"name": "Markdown links and URLs",
+			"scope": "markup.underline.link, string.other.link.title, meta.link",
+			"foreground": "var(brand_text)"
+		},
+		{
+			"name": "Markdown list punctuation",
+			"scope": "punctuation.definition.list_item, markup.list.numbered.bullet, markup.list.unnumbered.bullet",
+			"foreground": "var(brand_primary)"
+		},
+		{
+			"name": "Diff inserted",
+			"scope": "markup.inserted, meta.diff.header.to-file",
+			"foreground": "var(state_success)"
+		},
+		{
+			"name": "Diff deleted",
+			"scope": "markup.deleted, meta.diff.header.from-file",
+			"foreground": "var(state_error)"
+		},
+		{
+			"name": "Diff changed",
+			"scope": "markup.changed",
+			"foreground": "var(code_keyword)"
+		},
+		{
+			"name": "Diff headers",
+			"scope": "meta.diff.header, meta.diff.range",
+			"foreground": "var(label_tertiary)"
+		},
+		{
+			"name": "Invalid and errors",
+			"scope": "invalid, invalid.illegal",
+			"foreground": "var(state_error)"
+		},
+		{
+			"name": "Deprecated",
+			"scope": "invalid.deprecated",
+			"foreground": "var(code_string)",
+			"font_style": "italic"
+		}
+	]
+}

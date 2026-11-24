@@ -1,0 +1,403 @@
+{
+	"extends": "Default Dark.sublime-theme",
+	"variables":
+	{
+		"bg_base": "#0f0f11",
+		"bg_sidebar": "#131416",
+		"bg_layer_1": "#18191b",
+		"bg_layer_2": "#202124",
+		"bg_layer_3": "#26272b",
+		"bg_overlay": "#26272b",
+
+		"border_l1": "#27282c",
+		"border_l2": "#35373c",
+		"border_l3": "#46494f",
+
+		"label_primary": "#e3e4e6",
+		"label_on_brand": "#0f0f11",
+		"label_secondary": "#a7aab1",
+		"label_tertiary": "#82858d",
+		"label_ignored": "#5d6068",
+
+		"brand_primary": "#4fa66b",
+		"brand_hover": "#63b67c",
+		"brand_text": "#75bd8a",
+		"brand_tertiary": "#21392a",
+
+		"state_success": "#69c967",
+		"state_error": "#ff7e78",
+		"state_modified": "#569cd6",
+		"state_unmerged": "#ce9178",
+
+		"interactive_hover": "#232529",
+		"interactive_active": "#23372a",
+		"sidebar_active": "#1c3024",
+		"sidebar_active_accent": "#21392a",
+
+		"base_hue": "hsl(220, 7%, 15%)",
+		"base_tint": "#e3e4e6",
+
+		"ui_bg": "var(bg_layer_1)",
+		"text_fg": "var(label_primary)",
+		"link_fg": "var(brand_text)",
+		"label_color": "var(label_primary)",
+
+		"icon_tint": "var(label_secondary)",
+		"shape_tint": "var(label_secondary)",
+
+		"button_bg": "var(bg_layer_3)",
+		"button_label_color": "var(label_primary)",
+		"button_label_shadow": "transparent",
+
+		"sidebar_bg": "var(bg_sidebar)",
+		"sidebar_row_selected": "var(sidebar_active)",
+		"sidebar_heading": "var(label_tertiary)",
+		"sidebar_heading_shadow": "transparent",
+		"sidebar_label": "var(label_secondary)",
+		"sidebar_label_selected": "var(label_primary)",
+		"sidebar_label_ignored": "var(label_ignored)",
+
+		"sidebar_button_tint": "var(label_tertiary)",
+		"sidebar_button_new_tint": "var(state_success)",
+		"sidebar_button_modified_tint": "var(brand_primary)",
+		"sidebar_button_deleted_tint": "var(state_error)",
+
+		"sidebar_scroll_bar_bg": "var(border_l1)",
+		"sidebar_scroll_bar_puck_bg": "var(border_l3)",
+		"scroll_bar_bg": "var(border_l1)",
+		"scroll_bar_puck_bg": "var(border_l3)",
+		"scroll_bar_dark_bg": "var(border_l1)",
+		"scroll_bar_puck_dark_bg": "var(border_l3)",
+
+		"vcs_untracked": "var(label_tertiary)",
+		"vcs_modified": "var(state_modified)",
+		"vcs_missing": "var(state_error)",
+		"vcs_staged": "var(brand_text)",
+		"vcs_added": "var(state_success)",
+		"vcs_deleted": "var(state_error)",
+		"vcs_unmerged": "var(state_unmerged)",
+
+		"switch_project_bg": "var(bg_layer_2)",
+		"panel_bg": "var(bg_layer_1)",
+
+		"progress_bar_bg": "var(bg_layer_2)",
+		"progress_bar_fg": "var(brand_primary)",
+
+		"dialog_bg": "var(bg_layer_1)",
+		"dialog_button_bg": "var(brand_primary)",
+		"icon_button_highlight": "var(brand_tertiary)",
+
+		"tool_tip_bg": "var(bg_overlay)",
+		"tool_tip_fg": "var(label_primary)",
+
+		"tabset_dark_tint_mod": "color(var(bg_layer_1) a(1.0))",
+		"tabset_dark_bg": "var(bg_layer_1)",
+		"tabset_medium_dark_tint_mod": "color(var(bg_layer_1) a(1.0))",
+		"tabset_medium_dark_bg": "var(bg_layer_1)",
+		"tabset_medium_tint_mod": "color(var(bg_layer_1) a(1.0))",
+		"tabset_medium_bg": "var(bg_layer_1)",
+		"tabset_light_tint_mod": "color(var(bg_layer_1) a(1.0))",
+		"tabset_light_bg": "var(bg_layer_1)",
+
+		"file_tab_unselected_label_color": "var(label_secondary)",
+		"file_tab_selected_label_color": "var(label_primary)",
+		"file_tab_angled_unselected_dark_tint": "color(var(bg_layer_1) a(0.85))",
+		"file_tab_angled_unselected_medium_dark_tint": "color(var(bg_layer_1) a(0.85))",
+		"file_tab_angled_unselected_label_color": "var(label_secondary)",
+		"file_tab_angled_unselected_label_shadow": "transparent",
+
+		"file_tab_highlight_new_tint": "var(state_success)",
+		"file_tab_highlight_deleted_tint": "var(state_error)",
+		"file_tab_close_dark_tint": "var(label_tertiary)",
+		"file_tab_close_dark_new_tint": "var(state_success)",
+		"file_tab_close_dark_modified_tint": "var(brand_primary)",
+		"file_tab_close_dark_deleted_tint": "var(state_error)",
+
+		"sheet_dark_modifier": "blend(#131416 70%)",
+		"sheet_medium_dark_modifier": "blend(#131416 70%)",
+		"text_widget_dark_modifier": "blend(#131416 88%)",
+
+		"overlay_bg": "var(bg_layer_2)",
+		"quick_panel_label_color": "var(label_primary)",
+		"quick_panel_path_label_color": "var(label_tertiary)",
+		"quick_panel_matched_label_color": "var(brand_text)",
+		"quick_panel_matched_path_label_color": "var(brand_text)",
+
+		"quick_panel_selected_row_bg": "var(interactive_active)",
+		"quick_panel_selected_label_color": "var(label_primary)",
+		"quick_panel_selected_path_label_color": "var(label_secondary)",
+		"quick_panel_selected_matched_label_color": "var(brand_text)",
+		"quick_panel_selected_matched_path_label_color": "var(brand_text)",
+		"quick_panel_link_color": "var(brand_text)",
+
+		"viewport_always_visible_color": "color(var(border_l3) a(0.28))",
+		"viewport_hide_show_color": "color(var(border_l3) a(0.42))",
+
+		"auto_complete_bg_dark_tint": "color(var(bg_layer_2) a(1.0))",
+		"auto_complete_selected_row_dark_tint": "var(interactive_active)",
+		"auto_complete_text_dark_tint": "var(brand_text)",
+		"auto_complete_detail_pane_dark_tint": "color(var(bg_layer_1) a(1.0))",
+		"auto_complete_detail_panel_mono_dark_bg": "var(interactive_hover)",
+
+		"kind_function_color": "#dcdcaa",
+		"kind_keyword_color": "#c586c0",
+		"kind_markup_color": "#ce9178",
+		"kind_namespace_color": "#4ec9b0",
+		"kind_navigation_color": "#75bd8a",
+		"kind_snippet_color": "#4fa66b",
+		"kind_type_color": "#4ec9b0",
+		"kind_variable_color": "#9cdcfe",
+		"kind_name_label_border_color": "color(var(brand_primary) a(0.65))",
+
+		"status_bar_bg": "var(bg_sidebar)",
+		"status_bar_label_color": "var(label_secondary)",
+		"status_bar_icon_tint": "var(label_secondary)",
+		"status_bar_label_shadow": "transparent",
+
+		"radio_back": "var(bg_base)",
+		"radio_border-unselected": "var(border_l3)",
+		"radio_selected": "var(brand_primary)",
+		"radio_border-selected": "var(brand_primary)",
+
+		"checkbox_back": "var(bg_base)",
+		"checkbox_border-unselected": "var(border_l3)",
+		"checkbox_selected": "var(brand_primary)",
+		"checkbox_border-selected": "var(brand_primary)",
+		"checkbox-disabled": "var(border_l2)"
+	},
+	"rules":
+	[
+		{
+			"class": "title_bar",
+			"style": "dark",
+			"bg": "var(bg_layer_1)",
+			"fg": "var(label_primary)"
+		},
+		{
+			"class": "grid_layout_control",
+			"border_color": "var(border_l1)",
+			"border_size": 1
+		},
+		{
+			"class": "grid_layout_control",
+			"parents": [{"class": "edit_window", "attributes": ["file_dark"]}],
+			"border_color": "var(border_l1)"
+		},
+		{
+			"class": "grid_layout_control",
+			"parents": [{"class": "edit_window", "attributes": ["file_medium_dark"]}],
+			"border_color": "var(border_l1)"
+		},
+		{
+			"class": "sidebar_container",
+			"layer0.tint": "var(bg_sidebar)",
+			"layer0.opacity": 1.0,
+			"content_margin": [0, 4, 0, 4]
+		},
+		{
+			"class": "sidebar_tree",
+			"dark_content": true,
+			"row_padding": [14, 4, 6, 4]
+		},
+		{
+			"class": "tree_row",
+			"attributes": ["!hover", "!selected", "!highlighted"],
+			"layer0.opacity": 0.0
+		},
+		{
+			"class": "tree_row",
+			"attributes": ["selectable", "hover"],
+			"layer0.tint": "var(interactive_hover)",
+			"layer0.opacity": 1.0
+		},
+		{
+			"class": "tree_row",
+			"attributes": ["selected"],
+			"layer0.tint": "var(sidebar_active)",
+			"layer0.opacity": 1.0
+		},
+		{
+			"class": "tree_row",
+			"attributes": ["highlighted"],
+			"layer0.tint": "var(sidebar_active_accent)",
+			"layer0.opacity": 1.0
+		},
+		{
+			"class": "sidebar_label",
+			"parents": [{"class": "tree_row", "attributes": ["selected"]}],
+			"fg": "var(label_primary)"
+		},
+		{
+			"class": "sidebar_label",
+			"parents": [{"class": "tree_row", "attributes": ["highlighted"]}],
+			"fg": "var(label_primary)"
+		},
+		{
+			"class": "sidebar_label",
+			"parents": [{"class": "tree_row", "attributes": ["selectable", "hover"]}],
+			"fg": "var(label_primary)"
+		},
+		{
+			"class": "close_button",
+			"attributes": ["!hover", "dirty"],
+			"layer0.tint": "var(brand_primary)",
+			"layer0.opacity": 1.0
+		},
+		{
+			"class": "tabset_control",
+			"layer0.tint": "var(bg_layer_1)",
+			"layer0.opacity": 1.0
+		},
+		{
+			"class": "tab_control",
+			"settings": {"file_tab_style": ["", "rounded", "square"]},
+			"attributes": ["!selected", "hover"],
+			"layer1.opacity": { "target": 0.55, "speed": 5.0, "interpolation": "smoothstep" }
+		},
+		{
+			"class": "tab_close_button",
+			"attributes": ["!hover"],
+			"parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+			"layer0.tint": "var(brand_primary)",
+			"layer0.opacity": 1.0
+		},
+		{
+			"class": "overlay_control",
+			"layer0.tint": "var(bg_layer_2)",
+			"layer0.opacity": 1.0,
+			"content_margin": 6
+		},
+		{
+			"class": "quick_panel",
+			"layer0.tint": "var(bg_layer_2)",
+			"layer0.opacity": 1.0,
+			"row_padding": [8, 5, 8, 5],
+			"dark_content": true
+		},
+		{
+			"class": "quick_panel_row",
+			"attributes": ["selected"],
+			"layer0.tint": "var(interactive_active)",
+			"layer0.opacity": 1.0
+		},
+		{
+			"class": "mini_quick_panel_row",
+			"attributes": ["selected"],
+			"layer0.tint": "var(interactive_active)",
+			"layer0.opacity": 1.0
+		},
+		{
+			"class": "popup_control",
+			"layer0.tint": "var(bg_layer_2)",
+			"layer0.opacity": 1.0
+		},
+		{
+			"class": "auto_complete",
+			"tint_index": -1,
+			"layer0.tint": "var(bg_layer_2)",
+			"layer0.opacity": 1.0,
+			"row_padding": [6, 3, 6, 3]
+		},
+		{
+			"class": "table_row",
+			"attributes": ["selected"],
+			"layer0.tint": "var(interactive_active)",
+			"layer0.opacity": 1.0
+		},
+		{
+			"class": "auto_complete_label",
+			"fg": "var(label_primary)",
+			"match_fg": "var(brand_text)",
+			"selected_fg": "var(label_primary)",
+			"selected_match_fg": "var(brand_text)",
+			"fg_blend": false
+		},
+		{
+			"class": "auto_complete_hint",
+			"fg": "var(label_tertiary)",
+			"opacity": 0.9
+		},
+		{
+			"class": "auto_complete_detail_pane",
+			"tint_index": -1,
+			"layer0.tint": "var(bg_layer_1)",
+			"layer0.opacity": 1.0,
+			"content_margin": [8, 6, 8, 6]
+		},
+		{
+			"class": "panel_control",
+			"layer0.tint": "var(bg_layer_1)",
+			"layer0.opacity": 1.0,
+			"content_margin": [6, 6, 6, 6]
+		},
+		{
+			"class": "button_control",
+			"layer0.tint": "var(bg_layer_3)",
+			"layer0.opacity": 1.0
+		},
+		{
+			"class": "button_control",
+			"attributes": ["hover"],
+			"layer0.tint": "var(border_l2)",
+			"layer0.opacity": 1.0
+		},
+		{
+			"class": "button_control",
+			"attributes": ["pressed"],
+			"layer0.tint": "var(interactive_active)",
+			"layer0.opacity": 1.0
+		},
+		{
+			"class": "button_control",
+			"parents": [{"class": "dialog"}],
+			"layer0.tint": "var(brand_primary)",
+			"layer0.opacity": 1.0
+		},
+		{
+			"class": "button_control",
+			"parents": [{"class": "dialog"}],
+			"attributes": ["hover"],
+			"layer0.tint": "var(brand_hover)",
+			"layer0.opacity": 1.0
+		},
+		{
+			"class": "label_control",
+			"parents": [{"class": "dialog"}, {"class": "button_control"}],
+			"fg": "var(label_on_brand)"
+		},
+		{
+			"class": "icon_button_control",
+			"attributes": ["hover"],
+			"layer0.tint": "var(interactive_hover)",
+			"layer0.opacity": 1.0
+		},
+		{
+			"class": "icon_button_control",
+			"attributes": ["selected"],
+			"layer0.tint": "var(brand_tertiary)",
+			"layer0.opacity": 1.0
+		},
+		{
+			"class": "tool_tip_control",
+			"layer0.tint": "var(bg_overlay)",
+			"layer0.opacity": 1.0,
+			"content_margin": [8, 4, 8, 4]
+		},
+		{
+			"class": "tool_tip_label_control",
+			"fg": "var(label_primary)"
+		},
+		{
+			"class": "status_bar",
+			"layer0.tint": "var(bg_sidebar)",
+			"layer0.opacity": 1.0,
+			"content_margin": [10, 2, 10, 2]
+		},
+		{
+			"class": "status_button",
+			"attributes": ["hover"],
+			"layer0.tint": "var(interactive_hover)",
+			"layer0.opacity": 1.0
+		}
+	]
+}

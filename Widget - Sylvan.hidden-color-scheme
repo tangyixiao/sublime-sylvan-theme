@@ -1,0 +1,82 @@
+{
+	"name": "Sylvan Widgets",
+	"author": "Tangyixiao",
+	"variables":
+	{
+		"bg_base": "#0f0f11",
+		"border_l2": "#35373c",
+		"label_primary": "#e3e4e6",
+		"brand_primary": "#4fa66b",
+		"brand_tertiary": "#21392a",
+		"interactive_active": "#23372a",
+		"code_comment": "#6a9955",
+		"code_keyword": "#569cd6",
+		"code_keyword_control": "#c586c0",
+		"code_type": "#4ec9b0",
+		"code_string": "#ce9178",
+		"code_number": "#b5cea8",
+		"code_escape": "#d7ba7d",
+		"code_punctuation": "#cccccc"
+	},
+	"globals":
+	{
+		"background": "var(bg_base)",
+		"foreground": "var(label_primary)",
+		"caret": "var(brand_primary)",
+		"invisibles": "var(border_l2)",
+		"selection": "var(interactive_active)",
+		"selection_border": "color(var(brand_primary) a(0.45))",
+		"inactive_selection": "color(var(brand_tertiary) a(0.75))",
+		"inactive_selection_border": "transparent",
+		"bracket_contents_options": "stippled_underline"
+	},
+	"rules":
+	[
+		{
+			"name": "Comment",
+			"scope": "comment",
+			"foreground": "var(code_comment)",
+			"font_style": "italic"
+		},
+		{
+			"name": "Keyword",
+			"scope": "keyword, storage",
+			"foreground": "var(code_keyword)"
+		},
+		{
+			"name": "Control keyword",
+			"scope": "keyword.control",
+			"foreground": "var(code_keyword_control)"
+		},
+		{
+			"name": "Support",
+			"scope": "support.constant",
+			"foreground": "var(code_type)"
+		},
+		{
+			"name": "Operator",
+			"scope": "keyword.operator",
+			"foreground": "var(code_punctuation)"
+		},
+		{
+			"name": "Constant",
+			"scope": "constant.numeric",
+			"foreground": "var(code_number)"
+		},
+		{
+			"name": "String",
+			"scope": "string",
+			"foreground": "var(code_string)"
+		},
+		{
+			"name": "Escape",
+			"scope": "constant.character.escape",
+			"foreground": "var(code_escape)"
+		},
+		{
+			"name": "Punctuation",
+			"scope": "punctuation",
+			"foreground": "var(code_punctuation)"
+		}
+	]
+}
